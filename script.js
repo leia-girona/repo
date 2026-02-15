@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // La clave del arreglo: Se mueven la inicialización de los elementos
     // y toda la lógica principal DENTRO del listener 'DOMContentLoaded'.
 
-    const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRn0qWIqNko42_NBnwNsjf2AcH7adWeeacqn7qLiq7oq5RMn42DUQQLduunv4z8oZRA_wNIb9k1lDT7/pub?gid=743834684&single=true&output=csv';
+    const CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR9dlkzl-PwmZOzmhRrxBH6K4bBK8HqNyuXFwY1KSnVAY2PIogi9MAZyx0g6pYEKv6SMlv0EXGV1Lyf/pub?gid=168704695&single=true&output=csv";
 
     // --- State Variables ---
     let allApps = [];
@@ -633,20 +633,18 @@ document.addEventListener('DOMContentLoaded', () => {
     
     function processData(data) {
         const HEADER_MAPPING = {
-            timestamp: ['marca temporal'],
-            correo_autor: ['direccion de correo electronico', 'dirección de correo electrónico'],
-            nombre_autor: ['tu nombre'],
-            titulo_app: ['titulo de la aplicacion', 'título de la aplicación'],
-            url_app: ['enlace (url) a la aplicacion', 'enlace (url) a la aplicación', 'enlace (url)'],
-            descripcion_app: ['descripcion breve', 'descripción breve'],
-            plataforma: ['plataforma de creacion', 'plataforma de creación'],
-            tipo_recurso: ['tipo de recurso'],
-            nivel_educativo: ['nivel o niveles educativos'],
-            area_conocimiento: ['area o areas de conocimiento', 'área o áreas de conocimiento'],
-            palabras_clave: ['palabras clave'],
-            licencia: ['licencia de uso'],
-            idiomas_app: ['idiomas', 'idioma'],
-            eliminar_registro: ['quieres eliminar un registro', '¿quieres eliminar un registro?']
+                timestamp: ["marca de temps", "marca temporal", "timestamp"],
+                nombre_autor: ["el teu nom (autor/a de l'aplicació)","el teu nom (autor/a de l’aplicació)"],  
+                titulo_app: ["títol de l'aplicació","títol de l’aplicació"],
+                url_app: ["enllaç (url) a l'aplicació","enllaç (url) a l’aplicació"],
+                descripcion_app: ["descripció breu"],
+                plataforma: ["plataforma de creació"],
+                tipo_recurso: ["tipus de recurs"],
+                nivel_educativo: ["nivell o nivells educatius"],
+                area_conocimiento: ["àrea o àrees de coneixement","area o arees de coneixement"],
+                palabras_clave: ["paraules clau (opcional)", "paraules clau"],
+                licencia: ["llicència d’ús","llicència d'ús"],
+                idiomas_app: ["idiomes de l'aplicació","idiomes de l’aplicació"]
         };
 
         const headers = data?.[0] || [];
@@ -667,9 +665,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const fallbackToFixedOrder = (idiomasIdx = -1) => {
             const FULL_COLUMN_KEYS = [
-                'timestamp', 'correo_autor', 'nombre_autor', 'titulo_app', 'url_app',
+                'timestamp', 'nombre_autor', 'titulo_app', 'url_app',
                 'descripcion_app', 'plataforma', 'tipo_recurso', 'nivel_educativo',
-                'area_conocimiento', 'palabras_clave', 'licencia', 'eliminar_registro'
+                'area_conocimiento', 'palabras_clave', 'licencia'
             ];
 
             return (data || []).slice(1).map(rowArray => {
@@ -683,7 +681,6 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const hasRequiredHeaderMapping =
-            colIdx.correo_autor !== -1 &&
             colIdx.nombre_autor !== -1 &&
             colIdx.titulo_app !== -1 &&
             colIdx.url_app !== -1;
