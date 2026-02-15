@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // La clave del arreglo: Se mueven la inicialización de los elementos
     // y toda la lógica principal DENTRO del listener 'DOMContentLoaded'.
 
-    const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSj_hltRI4Q0QolINWJVcKxCMMjfpdiCkKzSdgp9d8RlGTdUU1UIKvaj-TBSkq0JQGneDhfUkSQuFzy/pub?output=csv';
+    const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRn0qWIqNko42_NBnwNsjf2AcH7adWeeacqn7qLiq7oq5RMn42DUQQLduunv4z8oZRA_wNIb9k1lDT7/pub?gid=743834684&single=true&output=csv';
 
     // --- State Variables ---
     let allApps = [];
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let categoryToDelete = null;
     let allAppKeys = new Set();
 
-    const REQUIRED_FIELDS = ['correo_autor', 'nombre_autor', 'titulo_app', 'url_app'];
+    const REQUIRED_FIELDS = ['nombre_autor', 'titulo_app', 'url_app'];
 
     // --- i18n ---
     const SUPPORTED_LANGS = ['es','ca','gl','eu','en'];
