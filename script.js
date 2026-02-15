@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const translations = { /* filled below */ };
     Object.assign(translations, {
         es: {
-            app_title: 'Repositorio de aplicaciones educativas',
-            header_subtitle_html: "Una colección de aplicaciones y recursos educativos creados por la comunidad <a href='https://vibe-coding-educativo.github.io' target='_blank' class='text-blue-600 hover:underline font-semibold dark:text-blue-400 dark:hover:text-blue-300'>Vibe Coding Educativo</a>.",
+            app_title: 'Repositorio de recursos educativus',
+            header_subtitle_html: "Una colección de recursos recursos educativos creados por la comunidad LEIA Girona.",
             search_label: 'Búsqueda libre',
             search_placeholder: 'Buscar por todos los campos...',
             clear_search_title: 'Limpiar búsqueda',
@@ -91,8 +91,8 @@ document.addEventListener('DOMContentLoaded', () => {
             language_label: 'Idioma(s):'
         },
         ca: {
-            app_title: "Repositori d'aplicacions educatives",
-            header_subtitle_html: "Una col·lecció d'aplicacions i recursos educatius creats per la comunitat <a href='https://vibe-coding-educativo.github.io' target='_blank' class='text-blue-600 hover:underline font-semibold dark:text-blue-400 dark:hover:text-blue-300'>Vibe Coding Educativo</a>.",
+            app_title: "Repositori de recursos educatius",
+            header_subtitle_html: "Una col·lecció de recursos educatius creats per la comunitat LEIA Girona",
             search_label: 'Cerca lliure',
             search_placeholder: 'Cerca a tots els camps...',
             clear_search_title: 'Neteja la cerca',
@@ -153,8 +153,8 @@ document.addEventListener('DOMContentLoaded', () => {
             language_label: 'Idioma(es):'
         },
         gl: {
-            app_title: 'Repositorio de aplicacións educativas',
-            header_subtitle_html: "Unha colección de aplicacións e recursos educativos creados pola comunidade <a href='https://vibe-coding-educativo.github.io' target='_blank' class='text-blue-600 hover:underline font-semibold dark:text-blue-400 dark:hover:text-blue-300'>Vibe Coding Educativo</a>.",
+            app_title: 'Repositorio de recursos educativos',
+            header_subtitle_html: "Unha colección de recursos educativos creados pola comunidade LEIA Girona",
             search_label: 'Busca libre',
             search_placeholder: 'Buscar en todos os campos...',
             clear_search_title: 'Limpar busca',
@@ -215,8 +215,8 @@ document.addEventListener('DOMContentLoaded', () => {
             language_label: 'Idioma(s):'
         },
         eu: {
-            app_title: 'Hezkuntza aplikazioen biltegia',
-            header_subtitle_html: "Komunitateak sortutako hezkuntza aplikazio eta baliabideen bilduma <a href='https://vibe-coding-educativo.github.io' target='_blank' class='text-blue-600 hover:underline font-semibold dark:text-blue-400 dark:hover:text-blue-300'>Vibe Coding Educativo</a>.",
+            app_title: 'Hezkuntza baliabideen biltegia',
+            header_subtitle_html: "LEIA Girona komunitateak sortutako hezkuntza baliabideen bilduma",
             search_label: 'Bilaketa askea',
             search_placeholder: 'Eremu guztietan bilatu...',
             clear_search_title: 'Bilaketa garbitu',
@@ -277,8 +277,8 @@ document.addEventListener('DOMContentLoaded', () => {
             language_label: 'Hizkuntza(k):'
         },
         en: {
-            app_title: 'Repository of educational apps',
-            header_subtitle_html: "A collection of educational apps and resources created by the <a href='https://vibe-coding-educativo.github.io' target='_blank' class='text-blue-600 hover:underline font-semibold dark:text-blue-400 dark:hover:text-blue-300'>Vibe Coding Educativo</a> community.",
+            app_title: 'Repository of Educational Resources',
+            header_subtitle_html: ""A collection of educational resources created by the LEIA Girona community.",
             search_label: 'Free search',
             search_placeholder: 'Search across all fields...',
             clear_search_title: 'Clear search',
