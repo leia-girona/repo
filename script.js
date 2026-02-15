@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         en: {
             app_title: 'Repository of Educational Resources',
-            header_subtitle_html: ""A collection of educational resources created by the LEIA Girona community.",
+            header_subtitle_html: "A collection of educational resources created by the LEIA Girona community.",
             search_label: 'Free search',
             search_placeholder: 'Search across all fields...',
             clear_search_title: 'Clear search',
