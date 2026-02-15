@@ -1,3 +1,10 @@
+window.addEventListener('error', (e) => {
+  console.error('JS error:', e.error || e.message);
+});
+window.addEventListener('unhandledrejection', (e) => {
+  console.error('Promise rejection:', e.reason);
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     // La clave del arreglo: Se mueven la inicialización de los elementos
     // y toda la lógica principal DENTRO del listener 'DOMContentLoaded'.
